@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<config>
+
+    <tabs>
+        <mostrarocultarpreco translate="label" module="guilhermekaran_mostrarocultarpreco">
+            <label>Guilherme Karan</label>
+            <sort_order>200</sort_order>
+        </mostrarocultarpreco>
+    </tabs>
+
+    <sections>
+        <mostrarocultarpreco>
+            <label>Mostrar / Ocultar Preço</label>
+            <tab>mostrarocultarpreco</tab>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <groups_mostrarocultarpreco>
+                    <label>Configurações do Modulo</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active>
+                            <label>Ativar Modulo?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Selecionando a opção sim, os preços e botões de compra da loja serão ocultados e
+                                aparecerão apenas após o cliente identificar-se.
+                            </comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                    </fields>
+                </groups_mostrarocultarpreco>
+            </groups>
+        </mostrarocultarpreco>
+    </sections>
+
+</config>

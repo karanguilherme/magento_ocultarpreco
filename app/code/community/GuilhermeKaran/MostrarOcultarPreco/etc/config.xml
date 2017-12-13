@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <GuilhermeKaran_MostrarOcultarPreco>
+            <version>1.0.0</version>
+        </GuilhermeKaran_MostrarOcultarPreco>
+    </modules>
+    <global>
+        <helpers>
+            <guilhermekaran_mostrarocultarpreco>
+                <class>
+                    GuilhermeKaran_MostrarOcultarPreco_Helper
+                </class>
+            </guilhermekaran_mostrarocultarpreco>
+        </helpers>
+        <blocks>
+            <guilhermekaran_mostrarocultarpreco>
+                <class>
+                    GuilhermeKaran_MostrarOcultarPreco_Block
+                </class>
+            </guilhermekaran_mostrarocultarpreco>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <guilhermekaran_mostrarocultarpreco>
+                    <file>guilhermekaran_mostrarocultarpreco.xml</file>
+                </guilhermekaran_mostrarocultarpreco>
+            </updates>
+        </layout>
+    </frontend>
+
+
+
+
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <mostrarocultarpreco>
+                                            <title>Mostrar / Ocultar Preço</title>
+                                        </mostrarocultarpreco>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+
+</config>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<layout>
+
+    <catalog_product_view>
+        <reference name="product.info">
+            <action method="setTemplate">
+                <name>mostrarocultarpreco/catalog/product/view.phtml</name>
+            </action>
+        </reference>
+    </catalog_product_view>
+
+    <product_list>
+        <reference name="product_list">
+            <action method="setTemplate">
+                <template>mostrarocultarpreco/catalog/product/list.phtml</template>
+            </action>
+        </reference>
+    </product_list>
+
+</layout>
